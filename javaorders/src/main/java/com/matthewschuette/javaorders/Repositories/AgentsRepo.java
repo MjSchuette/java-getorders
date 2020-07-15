@@ -1,4 +1,7 @@
 package com.matthewschuette.javaorders.Repositories;
 
-public interface AgentsRepo {
+import com.matthewschuette.javaorders.Models.Agents;
+import org.springframework.data.repository.CrudRepository;
+
+public interface AgentsRepo extends CrudRepository<Agents, Long> {
 }

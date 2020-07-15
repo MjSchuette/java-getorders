@@ -1,4 +1,7 @@
 package com.matthewschuette.javaorders.Repositories;
 
-public interface OrdersRepo {
+import com.matthewschuette.javaorders.Models.Orders;
+import org.springframework.data.repository.CrudRepository;
+
+public interface OrdersRepo extends CrudRepository<Orders, Long> {
 }

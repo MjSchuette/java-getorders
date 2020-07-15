@@ -1,6 +1,7 @@
 package com.matthewschuette.javaorders.Repositories;
 
-public interface PaymentsRepo {
+import com.matthewschuette.javaorders.Models.Payments;
+import org.springframework.data.repository.CrudRepository;
 
-
+public interface PaymentsRepo extends CrudRepository<Payments, Long> {
 }
