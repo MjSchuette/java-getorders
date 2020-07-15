@@ -22,7 +22,7 @@ public class Customers {
     private String custcountry;
     private String grade;
     private double openingamt;
-    private double recieveamt;
+    private double receiveamt;
     private double paymentamt;
     private double outstandingamt;
     private String phone;
@@ -39,7 +39,7 @@ public class Customers {
     public Customers() {
     }
 
-    public Customers(long custcode, String custname, String custcity, String workingarea, String custcountry, String grade, double openingamt, double recieveamt, double paymentamt, double outstandingamt, String phone) {
+    public Customers(long custcode, String custname, String custcity, String workingarea, String custcountry, String grade, double openingamt, double receiveamt, double paymentamt, double outstandingamt, String phone) {
         this.custcode = custcode;
         this.custname = custname;
         this.custcity = custcity;
@@ -47,7 +47,7 @@ public class Customers {
         this.custcountry = custcountry;
         this.grade = grade;
         this.openingamt = openingamt;
-        this.recieveamt = recieveamt;
+        this.receiveamt = receiveamt;
         this.paymentamt = paymentamt;
         this.outstandingamt = outstandingamt;
         this.phone = phone;
@@ -109,12 +109,12 @@ public class Customers {
         this.openingamt = openingamt;
     }
 
-    public double getRecieveamt() {
-        return recieveamt;
+    public double getReceiveamt() {
+        return receiveamt;
     }
 
-    public void setRecieveamt(double recieveamt) {
-        this.recieveamt = recieveamt;
+    public void setReceiveamt(double receiveamt) {
+        this.receiveamt = receiveamt;
     }
 
     public double getPaymentamt() {

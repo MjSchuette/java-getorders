@@ -5,7 +5,6 @@ import com.sun.istack.NotNull;
 
 import javax.persistence.*;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -26,6 +25,10 @@ public class Orders {
     private Customers customer;
 
     @ManyToMany()
+    @JoinTable(name = "orderspayments",
+        joinColumns = @JoinColumn(name = "ordnum"),
+        inverseJoinColumns = @JoinColumn(name = "paymentid"))
+    @JsonIgnoreProperties("orders")
     private Set<Payments> payments = new HashSet<>();
 
     public Orders() {
